@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Roth Farms Bill Automation</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+         max-width: 720px; margin: 40px auto; padding: 0 20px; color: #1a1a1a; line-height: 1.6; }
+  h1 { font-size: 1.5rem; } h2 { font-size: 1.1rem; margin-top: 28px; }
+  a { color: #1a6dc2; } .muted { color: #666; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p class="muted">Roth Farms Bill Automation &middot; Last updated: June 12, 2026</p>
+
+  <p>This policy explains how the private, internal application "Roth Farms Bill Automation"
+     (the "Software") handles data. The Software is operated solely by Roth Farms for our own use.</p>
+
+  <h2>What data the Software handles</h2>
+  <p>The Software processes bill documents we provide (images or PDFs of vendor invoices and
+     statements) and the QuickBooks Online data needed to record them — for example vendor names and
+     addresses, expense accounts, classes, dates, invoice numbers, and amounts. It also stores an
+     Intuit OAuth access/refresh token so it can connect to our QuickBooks companies.</p>
+
+  <h2>Where data goes</h2>
+  <p>The Software runs on our own computer. Data is shared with only two external services, and only
+     to perform the task:</p>
+  <ul>
+    <li><strong>Intuit / QuickBooks Online</strong> — bill and vendor data is sent to Intuit's API to
+        create and verify bills in our own QuickBooks companies, under Intuit's Developer Terms of
+        Service.</li>
+    <li><strong>Anthropic (Claude API)</strong> — each bill document is sent to Anthropic's API to
+        read the text and extract the bill's fields. Anthropic processes the document to return the
+        extracted data and does not receive our QuickBooks credentials.</li>
+  </ul>
+  <p>Data is not sold, rented, used for advertising, or shared with any other third party.</p>
+
+  <h2>Storage and security</h2>
+  <p>Bill documents and run reports are stored locally on our own machine. Intuit OAuth tokens and the
+     application's secret keys are stored in a local configuration file that is excluded from version
+     control and from cloud syncing. All connections to Intuit and Anthropic use encrypted HTTPS/TLS.
+     The Software is used by a single operator and does not expose a public service.</p>
+
+  <h2>Retention and deletion</h2>
+  <p>Because data stays on our machine, we control retention directly. Source documents and reports
+     can be deleted at any time, and QuickBooks access can be revoked from the Intuit account's
+     Connected Apps settings, which invalidates the stored tokens.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: Blake Roth, b_roth32@yahoo.com.</p>
+
+  <p class="muted">This document is a plain-language template prepared for an internal, single-user
+     application and is not legal advice.</p>
+</body>
+</html>
